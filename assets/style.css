@@ -1,0 +1,267 @@
+body{
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Outfit, sans-serif;
+    font-weight: 900;
+}
+
+.container{
+    width: 100%;
+}
+
+/* ---------------------------------------------------header--------------------------------------------- */
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0 9.5rem 0 9.5rem;
+    margin-top: 13px;
+}
+
+.ul_header{
+
+    list-style: none;
+}
+
+.ul_header>li{
+
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.menu{
+    display: none;
+}
+
+header>p{
+
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 0.2em;
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    /* border: 2px solid slateblue; */
+}
+  
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #ffffff;
+}
+  
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
+
+
+/* ----------------------------------------------------main--------------------------------------------- */
+main{
+
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid white; */
+    margin: 0 9.5rem 0 9.5rem;
+}
+
+.main_r{
+    margin-top: 101px;
+}
+
+.main_l{
+    /* width: 100%; */
+    margin-top: 160px;
+}
+
+.text{
+    color: white;
+}
+
+.text_1{
+
+    /* border: 2px solid red; */
+    font-size: 3rem;
+    width: 75%;
+}
+.text_2{
+    width: 90%;
+}
+
+.button{
+    margin-top: 56px;
+}
+
+button{
+
+    padding: 18px 32px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(247, 76, 15, 0.89);
+    color: white;
+}
+
+a{
+    color: rgba(247, 76, 15, 0.89);
+    text-decoration: none;
+    margin-left: 3rem;
+}
+
+.img{
+
+    width: 448px;
+    height: 448px;
+}
+
+
+
+/* --------------------------------------- */
+
+.arrow{
+
+    margin: 0 9.5rem 0 9.5rem;
+    margin-top: 56px;
+
+}
+
+.fa-arrow-down{
+
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* ----------------------------------responsive-------------------------- */
+
+@media (max-width:1415px ) {
+
+    .text_1{
+
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:1114px ) {
+
+    .link_1{
+
+        font-size: 0.8rem;
+        margin-left: 1rem;
+
+    }
+    
+}
+
+@media (max-width:1033px ) {
+
+    main{
+        flex-direction: column-reverse;
+    }
+    
+    .img{
+
+        width: 80%;
+        height: 80%;
+    }
+
+    .main_r{
+
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .main_l{
+
+        margin-top: 5px;
+
+
+
+    }
+
+    .text_1,.text_2{
+
+        text-align: center;
+        width: 100%;
+    }
+
+    .button{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .link_1{
+
+        margin-top: 20px;
+    }
+
+    .arrow{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:862px ) {
+
+    .menu{
+        display: flex;
+    }
+    .ul_header{
+        /* visibility: hidden; */
+        display: none;
+        border: 2px solid red;
+    }
+    
+}
+
+@media (max-width:720px ) {
+
+    .text_1{
+
+        font-size: 1rem;
+    }
+
+    .text_2{
+
+        font-size: 0.6rem;
+    }
+}
+
+
+@media (max-width:581px ) {
+
+    .titel{
+
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width:473px ) {
+
+    .titel{
+
+        font-size: 0.4rem;
+    }
+}
